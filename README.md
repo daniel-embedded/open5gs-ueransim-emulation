@@ -140,47 +140,49 @@ your-open5gs-ueransim-repo/
 
 ├── open5gs_configs/
 
-│   ├── amf.yaml
+    ├── amf.yaml
 
-│   ├── smf.yaml
+    ├── smf.yaml
 
-│   ├── upf.yaml
+    ├── upf.yaml
 
-│   ├── nrf.yaml
+    ├── nrf.yaml
 
-│   ├── scp.yaml
+    ├── scp.yaml
 
-│   ├── ausf.yaml
+    ├── ausf.yaml
 
-│   ├── udm.yaml
+    ├── udm.yaml
 
-│   ├── udr.yaml
+    ├── udr.yaml
 
-│   ├── pcf.yaml
+    ├── pcf.yaml
 
-│   └── nssf.yaml
+    └── nssf.yaml
 
 ├── ueransim_configs/
 
-│   ├── gnb1.yaml
+    ├── gnb1.yaml
+    
+    ├── gnb2.yaml
 
-│   ├── ue1.yaml
+    ├── ue1.yaml
 
-│   ├── ue2.yaml
+    ├── ue2.yaml
 
-│   ├── ue3.yaml
+    ├── ue3.yaml
 
-│   ├── ue4.yaml
+    ├── ue4.yaml
 
-│   └── ue5.yaml
+    └── ue5.yaml
 
 ├── scripts/
 
-│   ├── start_open5gs.sh               # Script to start Open5GS services
+    ├── start_open5gs.sh               # Script to start Open5GS services
 
-│   ├── stop_open5gs.sh                # Script to stop Open5GS services
+    ├── stop_open5gs.sh                # Script to stop Open5GS services
 
-│   └── start_ueransim.sh              # Script to start UERANSIM gNB and UEs
+    └── start_ueransim.sh              # Script to start UERANSIM gNB and UEs
 
 └── logs/
 
