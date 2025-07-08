@@ -21,6 +21,16 @@ sudo nohup ${UERANSIM_BUILD_DIR}/nr-gnb -c ${UERANSIM_CONFIG_DIR}/gnb1.yaml > ue
 echo "gNB process started in background. Check ueransim_gnb1.log for output."
 echo "PID: $!"
 
+# Start gNB (gnb2.yaml)
+echo "Starting gNB (gnb2.yaml) in a new terminal window..."
+# Option 1: Open in a new terminal (works with gnome-terminal, adjust for others)
+# gnome-terminal --tab --title="UERANSIM gNB 2" -- bash -c "sudo ${UERANSIM_BUILD_DIR}/nr-gnb -c ${UERANSIM_CONFIG_DIR}/gnb2.yaml; exec bash" &
+
+# Option 2: Run in background using nohup (output redirected to gnb2.log)
+# Ensure you have the config file copied to the UERANSIM_CONFIG_DIR if you are using your GitHub repo copies
+sudo nohup ${UERANSIM_BUILD_DIR}/nr-gnb -c ${UERANSIM_CONFIG_DIR}/gnb2.yaml > ueransim_gnb2.log 2>&1 &
+echo "gNB process started in background. Check ueransim_gnb2.log for output."
+echo "PID: $!"
 
 # Start UE1 (ue1.yaml)
 echo "Starting UE1 (ue1.yaml) in a new terminal window..."
