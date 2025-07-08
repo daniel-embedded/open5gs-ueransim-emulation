@@ -135,37 +135,69 @@ Ensure each UE has an associated internet DNN.
 5. Network Setup and Operation
 Repository File Structure
 your-open5gs-ueransim-repo/
+
 ├── README.md                          # This file
+
 ├── open5gs_configs/
+
 │   ├── amf.yaml
+
 │   ├── smf.yaml
+
 │   ├── upf.yaml
+
 │   ├── nrf.yaml
+
 │   ├── scp.yaml
+
 │   ├── ausf.yaml
+
 │   ├── udm.yaml
+
 │   ├── udr.yaml
+
 │   ├── pcf.yaml
+
 │   └── nssf.yaml
+
 ├── ueransim_configs/
+
 │   ├── gnb1.yaml
+
 │   ├── ue1.yaml
+
 │   ├── ue2.yaml
+
 │   ├── ue3.yaml
+
 │   ├── ue4.yaml
+
 │   └── ue5.yaml
+
 ├── scripts/
+
 │   ├── start_open5gs.sh               # Script to start Open5GS services
+
 │   ├── stop_open5gs.sh                # Script to stop Open5GS services
+
 │   └── start_ueransim.sh              # Script to start UERANSIM gNB and UEs
+
 └── logs/
+
     ├── open5gs_status_all.log         # Example output of Open5GS service status
+    
     ├── open5gs_amfd_log_all_ues.log   # Example AMF logs for UE registration
+    
     ├── open5gs_smfd_log_all_ues.log   # Example SMF logs for PDU session setup
+    
     ├── open5gs_upfd_log_all_ues.log   # Example UPF logs for UPF session creation
+    
     ├── ueransim_gnb1_log.log          # Example UERANSIM gNB logs
+    
     ├── ueransim_ue1_log.log           # Example UERANSIM UE1 logs
+    
     ├── ueransim_ue5_log.log           # Example UERANSIM UE5 logs (or others)
+    
     └── network_interfaces_ifconfig.log # Example ifconfig output
 
 Synchronizing Configuration Files
