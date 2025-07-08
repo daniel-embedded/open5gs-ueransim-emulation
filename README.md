@@ -117,6 +117,7 @@ UERANSIM Configuration
 UERANSIM configuration files are located in ~/UERANSIM/config/.
 
 gNB Configuration (gnb1.yaml): Configured to connect to the AMF at 127.0.0.5.
+Inserting a new gNb requires the creation of a new gnb2.yaml file that can be a copy of the first gNb. In this new file, it is necessary to change the linkIp and gtpIp fields, which can be done by adding one to the value of the previous gNb. In addition, it is necessary to include the linkIp value of the new gNb in the yaml files of all UEs in the gnbSearchList field, which accepts as many gNbs as are created.
 
 UE Configurations (ue1.yaml to ue5.yaml): Each UE is configured with a unique SUPI (e.g., imsi-999700000000001 for ue1) and points to the gNB.
 
