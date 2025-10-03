@@ -1,33 +1,53 @@
 ~/UERANSIM/config$ sudo ../build/nr-gnb -c gnb1.yaml
 UERANSIM v3.2.7
-[2025-07-04 15:22:47.952] [sctp] [info] Trying to establish SCTP connection... (127.0.0.5:38412)
-[2025-07-04 15:22:47.955] [sctp] [info] SCTP connection established (127.0.0.5:38412)
-[2025-07-04 15:22:47.956] [sctp] [debug] SCTP association setup ascId[5]
-[2025-07-04 15:22:47.956] [ngap] [debug] Sending NG Setup Request
-[2025-07-04 15:22:47.964] [ngap] [debug] NG Setup Response received
-[2025-07-04 15:22:47.965] [ngap] [info] NG Setup procedure is successful
-[2025-07-04 15:22:50.796] [rrc] [debug] UE[1] new signal detected
-[2025-07-04 15:22:50.797] [rrc] [info] RRC Setup for UE[1]
-[2025-07-04 15:22:50.797] [ngap] [debug] Initial NAS message received from UE[1]
-[2025-07-04 15:22:50.819] [ngap] [debug] Initial Context Setup Request received
-[2025-07-04 15:22:51.053] [ngap] [info] PDU session resource(s) setup for UE[1] count[1]
-[2025-07-04 15:22:53.750] [rrc] [debug] UE[2] new signal detected
-[2025-07-04 15:22:53.750] [rrc] [info] RRC Setup for UE[2]
-[2025-07-04 15:22:53.751] [ngap] [debug] Initial NAS message received from UE[2]
-[2025-07-04 15:22:53.770] [ngap] [debug] Initial Context Setup Request received
-[2025-07-04 15:22:54.016] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
-[2025-07-04 15:22:56.313] [rrc] [debug] UE[3] new signal detected
-[2025-07-04 15:22:56.314] [rrc] [info] RRC Setup for UE[3]
-[2025-07-04 15:22:56.314] [ngap] [debug] Initial NAS message received from UE[3]
-[2025-07-04 15:22:56.337] [ngap] [debug] Initial Context Setup Request received
-[2025-07-04 15:22:56.575] [ngap] [info] PDU session resource(s) setup for UE[3] count[1]
-[2025-07-04 15:22:59.293] [rrc] [debug] UE[4] new signal detected
-[2025-07-04 15:22:59.294] [rrc] [info] RRC Setup for UE[4]
-[2025-07-04 15:22:59.294] [ngap] [debug] Initial NAS message received from UE[4]
-[2025-07-04 15:22:59.319] [ngap] [debug] Initial Context Setup Request received
-[2025-07-04 15:22:59.557] [ngap] [info] PDU session resource(s) setup for UE[4] count[1]
-[2025-07-04 15:23:01.957] [rrc] [debug] UE[5] new signal detected
-[2025-07-04 15:23:01.958] [rrc] [info] RRC Setup for UE[5]
-[2025-07-04 15:23:01.958] [ngap] [debug] Initial NAS message received from UE[5]
-[2025-07-04 15:23:01.979] [ngap] [debug] Initial Context Setup Request received
-[2025-07-04 15:23:02.220] [ngap] [info] PDU session resource(s) setup for UE[5] count[1]
+[2025-10-03 09:22:22.351] [sctp] [info] Trying to establish SCTP connection... (127.0.0.5:38412)
+[2025-10-03 09:22:22.354] [sctp] [info] SCTP connection established (127.0.0.5:38412)
+[2025-10-03 09:22:22.354] [sctp] [debug] SCTP association setup ascId[23]
+[2025-10-03 09:22:22.354] [ngap] [debug] Sending NG Setup Request
+[2025-10-03 09:22:22.362] [ngap] [debug] NG Setup Response received
+[2025-10-03 09:22:22.362] [ngap] [info] NG Setup procedure is successful
+[2025-10-03 09:22:27.108] [rrc] [debug] UE[1] new signal detected
+[2025-10-03 09:22:28.858] [rrc] [debug] UE[2] new signal detected
+[2025-10-03 09:22:28.858] [rrc] [info] RRC Setup for UE[2]
+[2025-10-03 09:22:28.859] [ngap] [debug] Initial NAS message received from UE[2]
+[2025-10-03 09:22:28.874] [ngap] [debug] Initial Context Setup Request received
+[2025-10-03 09:22:29.112] [ngap] [info] PDU session resource(s) setup for UE[2] count[1]
+[2025-10-03 09:22:29.676] [rls] [debug] UE[1] signal lost
+[2025-10-03 09:22:34.340] [rrc] [debug] UE[3] new signal detected
+[2025-10-03 09:22:35.817] [rrc] [debug] UE[4] new signal detected
+[2025-10-03 09:22:37.020] [rls] [debug] UE[3] signal lost
+[2025-10-03 09:22:37.078] [rrc] [debug] UE[5] new signal detected
+[2025-10-03 09:22:37.985] [rrc] [debug] UE[6] new signal detected
+[2025-10-03 09:22:37.986] [rrc] [info] RRC Setup for UE[6]
+[2025-10-03 09:22:37.986] [ngap] [debug] Initial NAS message received from UE[6]
+[2025-10-03 09:22:38.002] [ngap] [debug] Initial Context Setup Request received
+[2025-10-03 09:22:38.186] [rls] [debug] UE[4] signal lost
+[2025-10-03 09:22:38.237] [ngap] [info] PDU session resource(s) setup for UE[6] count[1]
+[2025-10-03 09:22:39.188] [rls] [debug] UE[5] signal lost
+[2025-10-03 09:22:42.582] [rrc] [debug] UE[7] new signal detected
+[2025-10-03 09:22:42.583] [rrc] [info] RRC Setup for UE[7]
+[2025-10-03 09:22:42.584] [ngap] [debug] Initial NAS message received from UE[7]
+[2025-10-03 09:22:42.601] [ngap] [debug] UE Context Release Command received
+[2025-10-03 09:22:42.603] [rrc] [info] Releasing RRC connection for UE[7]
+[2025-10-03 09:22:44.096] [rrc] [debug] UE[8] new signal detected
+[2025-10-03 09:22:45.588] [rls] [debug] UE[7] signal lost
+[2025-10-03 09:22:51.612] [rrc] [debug] UE[9] new signal detected
+[2025-10-03 09:22:51.614] [rrc] [info] RRC Setup for UE[9]
+[2025-10-03 09:22:51.614] [ngap] [debug] Initial NAS message received from UE[9]
+[2025-10-03 09:22:51.633] [ngap] [debug] Initial Context Setup Request received
+[2025-10-03 09:22:51.869] [ngap] [info] PDU session resource(s) setup for UE[9] count[1]
+[2025-10-03 09:22:56.416] [rrc] [debug] UE[10] new signal detected
+[2025-10-03 09:22:56.419] [rrc] [info] RRC Setup for UE[10]
+[2025-10-03 09:22:56.420] [ngap] [debug] Initial NAS message received from UE[10]
+[2025-10-03 09:22:56.447] [ngap] [debug] Initial Context Setup Request received
+[2025-10-03 09:23:06.992] [rls] [debug] UE[10] signal lost
+[2025-10-03 09:23:50.019] [rrc] [debug] UE[11] new signal detected
+[2025-10-03 09:23:50.020] [rrc] [info] RRC Setup for UE[11]
+[2025-10-03 09:23:50.020] [ngap] [debug] Initial NAS message received from UE[11]
+[2025-10-03 09:23:50.027] [ngap] [debug] UE Context Release Command received
+[2025-10-03 09:23:50.027] [rrc] [info] Releasing RRC connection for UE[10]
+[2025-10-03 09:23:50.036] [ngap] [debug] Initial Context Setup Request received
+[2025-10-03 09:24:12.208] [rls] [debug] UE[11] signal lost
+[2025-10-03 09:26:10.498] [rrc] [debug] UE[12] new signal detected
+[2025-10-03 09:26:10.506] [ngap] [debug] UE Context Release Command received
+[2025-10-03 09:26:10.507] [rrc] [info] Releasing RRC connection for UE[11]

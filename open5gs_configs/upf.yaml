@@ -26,6 +26,8 @@ upf:
   session:
     - subnet: 10.45.0.0/16
       gateway: 10.45.0.1
+    - subnet: 10.46.0.0/16
+      gateway: 10.46.0.1
 #      dnn: internet
 #      dns:
 #        - address: 8.8.8.8 
@@ -34,8 +36,9 @@ upf:
   dnn:
     - addr: 10.45.0.1/16
       dnn: internet
+      dnn: internet2
     - addr: 10.46.0.1/16
-      dnn: urllc
+      dnn: ims
   metrics:
     server:
       - address: 127.0.0.7

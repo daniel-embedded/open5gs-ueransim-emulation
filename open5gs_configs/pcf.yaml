@@ -38,35 +38,36 @@ pcf:
 #
 # Example:
 #
-#  policy:
-#    - supi_range:          # Filter policies by SUPI
-#        - 999700000000001-999709999999999
-#        - 315010000000001-315010999999999
-#      plmn_id:             # Filter policies by home PLMN-ID
-#        mcc: 999
-#        mnc: 70
-#      slice:               # Specify slice configuration
-#        - sst: 1          # Allowed values: 1, 2, 3, 4
-#          default_indicator: true
-#          session:          # Define session based on DNN
-#            - name: internet
-#              type: 3       # 1: IPv4, 2: IPv6, 3: IPv4v6
-#              ambr:
-#                downlink:
-#                  value: 1
-#                  unit: 3   # 0: bps, 1: Kbps, 2: Mbps, 3: Gbps, 4: Tbps
-#                uplink:
-#                  value: 1
-#                  unit: 3
-#              qos:
-#                index: 9      # Allowed values: 1,2,3,4,65,66,67,75,71,72,
+  policy:
+    - supi_range:          # Filter policies by SUPI
+        - 999700000000001-999709999999999
+        - 315010000000001-315010999999999
+      plmn_id:             # Filter policies by home PLMN-ID
+        mcc: 999
+        mnc: 70
+      slice:               # Specify slice configuration
+        - sst: 1          # Allowed values: 1, 2, 3, 4
+          sd: 000001
+          default_indicator: true
+          session:          # Define session based on DNN
+            - name: internet
+              type: 3       # 1: IPv4, 2: IPv6, 3: IPv4v6
+              ambr:
+                downlink:
+                  value: 1
+                  unit: 3   # 0: bps, 1: Kbps, 2: Mbps, 3: Gbps, 4: Tbps
+                uplink:
+                  value: 1
+                  unit: 3
+              qos:
+                index: 9      # Allowed values: 1,2,3,4,65,66,67,75,71,72,
 #                              # 73,74,76,5,6,7,8,9,69,70,79,80,82,83,
 #                              # 84,85,86
-#                arp:
-#                  priority_level: 8   # Allowed values: 1 to 15
-#                  pre_emption_vulnerability: 1  # 1: Disabled, 2: Enabled
-#                  pre_emption_capability: 1     # 1: Disabled, 2: Enabled
-#            - name: ims
+                arp:
+                  priority_level: 8   # Allowed values: 1 to 15
+                  pre_emption_vulnerability: 1  # 1: Disabled, 2: Enabled
+                  pre_emption_capability: 1     # 1: Disabled, 2: Enabled
+#            - name: internet2
 #              type: 3       # 1: IPv4, 2: IPv6, 3: IPv4v6
 #              ambr:
 #                downlink:
@@ -137,25 +138,45 @@ pcf:
 #    - supi_range:         # Filter policies by SUPI only
 #        - 001010000000001-001019999999999
 #      slice:               # Specify slice configuration
-#        - sst: 1          # Allowed values: 1, 2, 3, 4
-#          sd: 000001
-#          default_indicator: true
-#          session:          # Define session based on DNN
-#            - name: internet
-#              type: 3       # 1: IPv4, 2: IPv6, 3: IPv4v6
-#              ambr:
-#                downlink:
-#                  value: 1
-#                  unit: 3   # 0: bps, 1: Kbps, 2: Mbps, 3: Gbps, 4: Tbps
-#                uplink:
-#                  value: 1
-#                  unit: 3
-#              qos:
-#                index: 9      # Allowed values as above
-#                arp:
-#                  priority_level: 8   # Allowed values: 1 to 15
-#                  pre_emption_vulnerability: 1  # 1: Disabled, 2: Enabled
-#                  pre_emption_capability: 1     # 1: Disabled, 2: Enabled
+        - sst: 2          # Allowed values: 1, 2, 3, 4
+          sd: 000002
+          default_indicator: true
+          session:          # Define session based on DNN
+            - name: internet2
+              type: 3       # 1: IPv4, 2: IPv6, 3: IPv4v6
+              ambr:
+                downlink:
+                  value: 1
+                  unit: 3   # 0: bps, 1: Kbps, 2: Mbps, 3: Gbps, 4: Tbps
+                uplink:
+                  value: 1
+                  unit: 3
+              qos:
+                index: 9      # Allowed values as above
+                arp:
+                  priority_level: 8   # Allowed values: 1 to 15
+                  pre_emption_vulnerability: 1  # 1: Disabled, 2: Enabled
+                  pre_emption_capability: 1     # 1: Disabled, 2: Enabled
+        - sst: 3          # Allowed values: 1, 2, 3, 4
+          sd: 000003
+          default_indicator: true
+          session:          # Define session based on DNN
+            - name: ims
+              type: 3       # 1: IPv4, 2: IPv6, 3: IPv4v6
+              ambr:
+                downlink:
+                  value: 1
+                  unit: 3   # 0: bps, 1: Kbps, 2: Mbps, 3: Gbps, 4: Tbps
+                uplink:
+                  value: 1
+                  unit: 3
+              qos:
+                index: 3      # Allowed values as above
+                arp:
+                  priority_level: 5   # Allowed values: 1 to 15
+                  pre_emption_vulnerability: 1  # 1: Disabled, 2: Enabled
+                  pre_emption_capability: 1     # 1: Disabled, 2: Enabled
+#
 #
 ################################################################################
 # SBI Server

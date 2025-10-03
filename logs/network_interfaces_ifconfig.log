@@ -1,7 +1,7 @@
 ~$ ifconfig
 br-5794c2573fa7: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         inet 172.18.0.1  netmask 255.255.0.0  broadcast 172.18.255.255
-        ether 02:42:bc:ea:c7:e4  txqueuelen 0  (Ethernet)
+        ether 02:42:41:ec:4e:f0  txqueuelen 0  (Ethernet)
         RX packets 0  bytes 0 (0.0 B)
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 0  bytes 0 (0.0 B)
@@ -9,11 +9,11 @@ br-5794c2573fa7: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 
 docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
-        ether 02:42:33:67:1d:dc  txqueuelen 0  (Ethernet)
+        ether 02:42:90:2b:30:63  txqueuelen 0  (Ethernet)
         RX packets 0  bytes 0 (0.0 B)
         RX errors 0  dropped 0  overruns 0  frame 0
         TX packets 0  bytes 0 (0.0 B)
-        TX errors 0  dropped 32 overruns 0  carrier 0  collisions 0
+        TX errors 0  dropped 30 overruns 0  carrier 0  collisions 0
 
 enp3s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         ether d0:94:66:a0:64:df  txqueuelen 1000  (Ethernet)
@@ -26,72 +26,72 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         inet 127.0.0.1  netmask 255.0.0.0
         inet6 ::1  prefixlen 128  scopeid 0x10<host>
         loop  txqueuelen 1000  (Loopback Local)
-        RX packets 36162  bytes 5150732 (5.1 MB)
+        RX packets 1011406  bytes 105351359 (105.3 MB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 36162  bytes 5150732 (5.1 MB)
+        TX packets 1011406  bytes 105351359 (105.3 MB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 ogstun: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1400
         inet 10.45.0.1  netmask 255.255.0.0  destination 10.45.0.1
+        inet6 fe80::799f:77d3:c069:9860  prefixlen 64  scopeid 0x20<link>
         inet6 2001:db8:cafe::1  prefixlen 48  scopeid 0x0<global>
-        inet6 fe80::3b2:e348:83ab:6f99  prefixlen 64  scopeid 0x20<link>
         unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
-        RX packets 0  bytes 0 (0.0 B)
+        RX packets 445  bytes 80240 (80.2 KB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 9  bytes 504 (504.0 B)
+        TX packets 132  bytes 20245 (20.2 KB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 uesimtun0: flags=369<UP,POINTOPOINT,NOTRAILERS,RUNNING,PROMISC>  mtu 1400
-        inet 10.45.0.7  netmask 255.255.255.0  destination 10.45.0.7
-        inet6 fe80::1f88:7f19:52d6:e0dd  prefixlen 64  scopeid 0x20<link>
+        inet 10.45.0.2  netmask 255.255.255.0  destination 10.45.0.2
+        inet6 fe80::b110:60d4:5c80:a047  prefixlen 64  scopeid 0x20<link>
         unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
         RX packets 0  bytes 0 (0.0 B)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 11  bytes 640 (640.0 B)
+        TX packets 108  bytes 17072 (17.0 KB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 uesimtun1: flags=369<UP,POINTOPOINT,NOTRAILERS,RUNNING,PROMISC>  mtu 1400
-        inet 10.45.0.8  netmask 255.255.255.0  destination 10.45.0.8
-        inet6 fe80::da5f:f27:8ace:745a  prefixlen 64  scopeid 0x20<link>
+        inet 10.45.0.3  netmask 255.255.255.0  destination 10.45.0.3
+        inet6 fe80::5a31:fc92:43d8:ad58  prefixlen 64  scopeid 0x20<link>
         unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
         RX packets 0  bytes 0 (0.0 B)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 11  bytes 640 (640.0 B)
+        TX packets 108  bytes 17072 (17.0 KB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 uesimtun2: flags=369<UP,POINTOPOINT,NOTRAILERS,RUNNING,PROMISC>  mtu 1400
-        inet 10.45.0.9  netmask 255.255.255.0  destination 10.45.0.9
-        inet6 fe80::b:add3:2c2f:2e46  prefixlen 64  scopeid 0x20<link>
+        inet 10.45.0.4  netmask 255.255.255.0  destination 10.45.0.4
+        inet6 fe80::4d1c:f568:937:8fea  prefixlen 64  scopeid 0x20<link>
         unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
         RX packets 0  bytes 0 (0.0 B)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 12  bytes 688 (688.0 B)
+        TX packets 108  bytes 17072 (17.0 KB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 uesimtun3: flags=369<UP,POINTOPOINT,NOTRAILERS,RUNNING,PROMISC>  mtu 1400
-        inet 10.45.0.10  netmask 255.255.255.0  destination 10.45.0.10
-        inet6 fe80::5387:51d:51d1:736d  prefixlen 64  scopeid 0x20<link>
+        inet 10.45.0.5  netmask 255.255.255.0  destination 10.45.0.5
+        inet6 fe80::b8c:efba:e844:2653  prefixlen 64  scopeid 0x20<link>
         unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
         RX packets 0  bytes 0 (0.0 B)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 11  bytes 640 (640.0 B)
+        TX packets 108  bytes 17072 (17.0 KB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 uesimtun4: flags=369<UP,POINTOPOINT,NOTRAILERS,RUNNING,PROMISC>  mtu 1400
-        inet 10.45.0.11  netmask 255.255.255.0  destination 10.45.0.11
-        inet6 fe80::edf5:3bda:5daf:ca63  prefixlen 64  scopeid 0x20<link>
+        inet 10.45.0.6  netmask 255.255.255.0  destination 10.45.0.6
+        inet6 fe80::ca3a:f495:637f:2b22  prefixlen 64  scopeid 0x20<link>
         unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
         RX packets 0  bytes 0 (0.0 B)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 11  bytes 640 (640.0 B)
+        TX packets 108  bytes 17072 (17.0 KB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 wlp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 192.168.18.10  netmask 255.255.255.0  broadcast 192.168.18.255
         inet6 fe80::f8b2:89e8:6c97:5287  prefixlen 64  scopeid 0x20<link>
         ether e8:9e:b4:64:8e:2f  txqueuelen 1000  (Ethernet)
-        RX packets 5687  bytes 2349364 (2.3 MB)
+        RX packets 1991653  bytes 2759388055 (2.7 GB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 4157  bytes 1278850 (1.2 MB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        TX packets 651460  bytes 87603957 (87.6 MB)
+        TX errors 0  dropped 10 overruns 0  carrier 0  collisions 0
 

@@ -34,7 +34,7 @@ This setup provides a basic yet complete 5G SA (Standalone) network emulation on
 * **UERANSIM**: Simulates a 5G gNB and multiple UEs, connecting to the Open5GS core.
 * **Single Machine Deployment**: All components run on the same host, using loopback interfaces for inter-NF communication.
 * **SCP Delegation**: Network Functions are configured to delegate SBI (Service-Based Interface) communication through the SCP, simplifying NF discovery and interaction, a pattern seen in more complex deployments like s5uishida's samples.
-* **Internal IP Addressing**: UEs receive IP addresses from an internal `10.45.0.0/16` subnet, managed by Open5GS.
+* **Internal IP Addressing**: UEs receive IP addresses from an internal subnets (`10.45.0.0/16` and `10.46.0.0/16`), managed by Open5GS.
 * **PLMN ID**: Network operates with PLMN ID 999/70.
 * **Automation Scripts**: Bash scripts are provided to streamline the startup and shutdown of Open5GS services and UERANSIM components.
 
@@ -109,17 +109,25 @@ SCP Delegation: All core NFs (AMF, SMF, AUSF, UDM, UDR, PCF, NSSF) are configure
 
 PLMN ID and TAC: The network operates with PLMN ID 999/70 and TAC 1. This is defined in amf.yaml, nrf.yaml, and aligned with UERANSIM configurations.
 
-DNN and IP Pool: The primary Data Network Name (DNN) is internet. UEs obtain IPv4 addresses from the 10.45.0.0/16 subnet, with 10.45.0.1 as the gateway on the ogstun interface, as configured in smf.yaml and upf.yaml.
+* **Slicing (S-NSSAI) Configuration**:
+    * [cite_start]The core network supports three slices: SST:1/SD:000001 (`internet`), SST:2/SD:000002 (`internet2`), and SST:3/SD:000003 (`ims`).
+    * **CRITICAL FIX**: In the `amf.yaml`'s `plmn_support` section, only one S-NSSAI (SST:1/SD:000001) is set as the default slice using `default_indicator: true`. This must be unambiguous to avoid internal AMF logic errors and intermittent registration failures with the `No Allowed-NSSAI` error.
+    * The SMF is configured to handle the three slices and their corresponding DNNs, assigning IP subnets `10.45.0.0/16` and `10.46.0.0/16`.
 
 Configuration Files: The Open5GS configuration files (*.yaml) are located in /etc/open5gs/. The versions provided in this repository under open5gs_configs/ should be copied to this location.
 
 UERANSIM Configuration
 UERANSIM configuration files are located in ~/UERANSIM/config/.
 
-gNB Configuration (gnb1.yaml): Configured to connect to the AMF at 127.0.0.5.
-Inserting a new gNb requires the creation of a new gnb2.yaml file that can be a copy of the first gNb. In this new file, it is necessary to change the linkIp and gtpIp fields, which can be done by adding one to the value of the previous gNb. In addition, it is necessary to include the linkIp value of the new gNb in the yaml files of all UEs in the gnbSearchList field, which accepts as many gNbs as are created.
-
-UE Configurations (ue1.yaml to ue5.yaml): Each UE is configured with a unique SUPI (e.g., imsi-999700000000001 for ue1) and points to the gNB.
+* **gNB Configuration (`gnb1.yaml` and `gnb2.yaml`)**:
+    * **gNB1** (`linkIp: 127.0.0.101`) supports slices SST:1/SD:000001 and SST:2/SD:000002.
+    * **gNB2** (`linkIp: 127.0.0.102`) supports slice SST:3/SD:000003.
+    * Both gNBs are configured to connect to the AMF at 127.0.0.5.
+    Inserting a new gNb requires the creation of a new yaml file that can be a copy of the first gNb. In this new file, it is necessary to change the linkIp and gtpIp fields, which can be done by adding one to the value of the previous gNb. In addition, it is necessary to include the linkIp value of the new gNb in the yaml files of all UEs in the gnbSearchList field, which accepts as many gNbs as are created.
+* **UE Configurations (`ue1.yaml` to `ue5.yaml`)**:
+    * Each UE is configured with a unique SUPI (e.g., `imsi-999700000000001`).
+    * UEs are configured with different default slices and PDU sessions (e.g., UE2 uses SST:2/SD:000002 and DNN `internet2`).
+    * The `gnbSearchList` in each UE configuration must include the `linkIp` of all active gNBs (`127.0.0.101` and `127.0.0.102`).
 
 UE Registration
 User Equipment (UE) registration and subscription data are managed through the Open5GS WebUI. 
@@ -130,7 +138,7 @@ Navigate to the Subscriber Management section.
 
 Add subscribers with SUPIs corresponding to your UERANSIM UE configurations (e.g., imsi-999700000000001 to imsi-999700000000005).
 
-Ensure each UE has an associated internet DNN.
+Ensure each UE has an associated internet DNN. To use Network Slicing, it is mandatory to insert SST and SD values.
 
 5. Network Setup and Operation
 Repository File Structure
@@ -266,6 +274,7 @@ Verify Network Interfaces: Confirm that ogstun and uesimtunX interfaces are crea
 
 8. Troubleshooting Tips
     Service Status: Always start by checking sudo systemctl status open5gs-* to ensure all core network functions are running.
+    Slicing Errors (`No Allowed-NSSAI`): If you experience intermittent registration failures with this error, ensure the **`plmn_support`** section in **`amf.yaml`** has **only one** S-NSSAI configured with `default_indicator: true` to prevent ambiguous logic in the AMF.
     Firewall: Ensure your firewall (e.g., ufw) is not blocking necessary ports. Open5GS uses various ports for SBI (7777), PFCP (8805), GTP (2152), and NGAP (38412).
     Configuration Mismatches: Small typos or incorrect IP addresses in .yaml files are common culprits. Double-check addresses, PLMN IDs, and port numbers.
     MongoDB: Verify MongoDB is running and accessible if you encounter issues with UE data.

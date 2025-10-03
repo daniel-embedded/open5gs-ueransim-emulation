@@ -1,221 +1,230 @@
 ~$ sudo systemctl status open5gs-amfd
 ● open5gs-amfd.service - Open5GS AMF Daemon
      Loaded: loaded (/usr/lib/systemd/system/open5gs-amfd.service; enabled; preset: enabled)
-     Active: active (running) since Fri 2025-07-04 15:05:27 -03; 3min 35s ago
-   Main PID: 3628 (open5gs-amfd)
-      Tasks: 2 (limit: 18836)
-     Memory: 10.5M (peak: 11.0M)
-        CPU: 103ms
+     Active: active (running) since Fri 2025-10-03 09:22:11 -03; 5h 45min ago
+   Main PID: 15648 (open5gs-amfd)
+      Tasks: 2 (limit: 18835)
+     Memory: 33.8M (peak: 34.3M)
+        CPU: 3.435s
      CGroup: /system.slice/open5gs-amfd.service
-             └─3628 /usr/bin/open5gs-amfd -c /etc/open5gs/amf.yaml
+             └─15648 /usr/bin/open5gs-amfd -c /etc/open5gs/amf.yaml
 
-jul 04 15:05:30 dhmm-Inspiron-5567 open5gs-amfd[3628]: 07/04 15:05:30.332: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
-jul 04 15:05:30 dhmm-Inspiron-5567 open5gs-amfd[3628]: 07/04 15:05:30.332: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
-jul 04 15:05:30 dhmm-Inspiron-5567 open5gs-amfd[3628]: 07/04 15:05:30.332: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
-jul 04 15:05:30 dhmm-Inspiron-5567 open5gs-amfd[3628]: 07/04 15:05:30.332: [sbi] INFO: [7835abfa-5901-41f0-8004-7f433e6c8f1c] (>
-jul 04 15:05:30 dhmm-Inspiron-5567 open5gs-amfd[3628]: 07/04 15:05:30.332: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.4:80] (>
-jul 04 15:05:30 dhmm-Inspiron-5567 open5gs-amfd[3628]: 07/04 15:05:30.332: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.4:7777]>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-amfd[3628]: 07/04 15:06:11.349: [sbi] INFO: [91245170-5901-41f0-a5ba-83842fcedf86] (>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-amfd[3628]: 07/04 15:06:11.349: [sbi] INFO: [91245170-5901-41f0-a5ba-83842fcedf86] (>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-amfd[3628]: 07/04 15:06:11.349: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.13:80] >
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-amfd[3628]: 07/04 15:06:11.350: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.13:7777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-amfd[15648]: 10/03 09:26:10.516: [amf] INFO: Setup NF EndPoint(addr) [127.0.0.13:777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-amfd[15648]: 10/03 09:26:10.720: [gmm] INFO: [imsi-999700000000005] Registration com>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-amfd[15648]: 10/03 09:26:10.720: [amf] INFO: [imsi-999700000000005] Configuration up>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-amfd[15648]: 10/03 09:26:10.720: [gmm] INFO:     UTC [2025-10-03T12:26:10] Timezone[>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-amfd[15648]: 10/03 09:26:10.720: [gmm] INFO:     LOCAL [2025-10-03T09:26:10] Timezon>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-amfd[15648]: 10/03 09:26:10.721: [gmm] INFO: UE SUPI[imsi-999700000000005] DNN[ims] >
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-amfd[15648]: 10/03 09:26:10.721: [amf] INFO: [983735f6-a053-41f0-b9b3-f93848208066] >
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-amfd[15648]: 10/03 09:26:10.721: [gmm] INFO: SMF Instance [983735f6-a053-41f0-b9b3-f>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-amfd[15648]: 10/03 09:26:10.735: [amf] INFO: Setup NF EndPoint(addr) [127.0.0.4:7777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-amfd[15648]: 10/03 09:26:10.770: [amf] INFO: [imsi-999700000000005:1:11][0:0:NULL] />
+
 
 ~$ sudo systemctl status open5gs-smfd
 ● open5gs-smfd.service - Open5GS SMF Daemon
      Loaded: loaded (/usr/lib/systemd/system/open5gs-smfd.service; enabled; preset: enabled)
-     Active: active (running) since Fri 2025-07-04 15:05:27 -03; 3min 47s ago
-   Main PID: 3631 (open5gs-smfd)
-      Tasks: 2 (limit: 18836)
-     Memory: 34.3M (peak: 34.8M)
-        CPU: 193ms
+     Active: active (running) since Fri 2025-10-03 09:22:14 -03; 5h 46min ago
+   Main PID: 15656 (open5gs-smfd)
+      Tasks: 2 (limit: 18835)
+     Memory: 37.5M (peak: 38.0M)
+        CPU: 4.451s
      CGroup: /system.slice/open5gs-smfd.service
-             └─3631 /usr/bin/open5gs-smfd -c /etc/open5gs/smf.yaml
+             └─15656 /usr/bin/open5gs-smfd -c /etc/open5gs/smf.yaml
 
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-smfd[3631]: 07/04 15:05:29.547: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
-jul 04 15:05:30 dhmm-Inspiron-5567 open5gs-smfd[3631]: 07/04 15:05:30.315: [sbi] INFO: [784b1f26-5901-41f0-80ad-2ba31a3c1235] (>
-jul 04 15:05:30 dhmm-Inspiron-5567 open5gs-smfd[3631]: 07/04 15:05:30.315: [sbi] INFO: [784b1f26-5901-41f0-80ad-2ba31a3c1235] (>
-jul 04 15:05:30 dhmm-Inspiron-5567 open5gs-smfd[3631]: 07/04 15:05:30.315: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.5:80] (>
-jul 04 15:05:30 dhmm-Inspiron-5567 open5gs-smfd[3631]: 07/04 15:05:30.315: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.5:7777]>
-jul 04 15:05:32 dhmm-Inspiron-5567 open5gs-smfd[3631]: 07/04 15:05:32.042: [smf] WARNING: PFCP[RSP] has already been associated>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-smfd[3631]: 07/04 15:06:11.349: [sbi] INFO: [91245170-5901-41f0-a5ba-83842fcedf86] (>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-smfd[3631]: 07/04 15:06:11.349: [sbi] INFO: [91245170-5901-41f0-a5ba-83842fcedf86] (>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-smfd[3631]: 07/04 15:06:11.349: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.13:80] >
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-smfd[3631]: 07/04 15:06:11.349: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.13:7777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-smfd[15656]: 10/03 09:26:10.723: [smf] INFO: [Added] Number of SMF-UEs is now 5 (../>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-smfd[15656]: 10/03 09:26:10.724: [smf] INFO: [Added] Number of SMF-Sessions is now 5>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-smfd[15656]: 10/03 09:26:10.724: [smf] INFO: Setup NF EndPoint(addr) [127.0.0.5:7777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-smfd[15656]: 10/03 09:26:10.724: [sbi] INFO: [9abd2236-a053-41f0-839e-1369610be3b1] >
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-smfd[15656]: 10/03 09:26:10.732: [smf] INFO: Setup NF EndPoint(addr) [127.0.0.12:777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-smfd[15656]: 10/03 09:26:10.733: [sbi] INFO: [798353b4-a045-41f0-b8e2-b550be2faddf] >
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-smfd[15656]: 10/03 09:26:10.742: [smf] INFO: Setup NF EndPoint(addr) [127.0.0.13:777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-smfd[15656]: 10/03 09:26:10.742: [smf] INFO: UE SUPI[imsi-999700000000005] DNN[ims] >
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-smfd[15656]: 10/03 09:26:10.744: [sbi] INFO: [9664741e-a053-41f0-ae4c-033dd9498b4b] >
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-smfd[15656]: 10/03 09:26:10.754: [sbi] INFO: [9abd2236-a053-41f0-839e-1369610be3b1] >
+
 
 ~$ sudo systemctl status open5gs-scpd
 ● open5gs-scpd.service - Open5GS SCP Daemon
      Loaded: loaded (/usr/lib/systemd/system/open5gs-scpd.service; enabled; preset: enabled)
-     Active: active (running) since Fri 2025-07-04 15:03:37 -03; 5min ago
-   Main PID: 1193 (open5gs-scpd)
-      Tasks: 2 (limit: 18836)
-     Memory: 10.8M (peak: 11.3M)
-        CPU: 308ms
+     Active: active (running) since Fri 2025-10-03 07:38:19 -03; 7h ago
+   Main PID: 1429 (open5gs-scpd)
+      Tasks: 2 (limit: 18835)
+     Memory: 35.0M (peak: 35.5M)
+        CPU: 21.769s
      CGroup: /system.slice/open5gs-scpd.service
-             └─1193 /usr/bin/open5gs-scpd -c /etc/open5gs/scp.yaml
+             └─1429 /usr/bin/open5gs-scpd -c /etc/open5gs/scp.yaml
 
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-scpd[1193]: 07/04 15:06:11.349: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.13:7777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-scpd[1193]: 07/04 15:06:11.349: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.13:7777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-scpd[1193]: 07/04 15:06:11.349: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.13:7777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-scpd[1193]: 07/04 15:06:11.349: [scp] INFO: Setup NF EndPoint(addr) [127.0.0.4:7777]>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-scpd[1193]: 07/04 15:06:11.349: [scp] INFO: Setup NF EndPoint(addr) [127.0.0.5:7777]>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-scpd[1193]: 07/04 15:06:11.349: [scp] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-scpd[1193]: 07/04 15:06:11.350: [sbi] INFO: [912440d6-5901-41f0-89d5-252872096f88] (>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-scpd[1193]: 07/04 15:06:11.350: [sbi] INFO: [912440d6-5901-41f0-89d5-252872096f88] (>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-scpd[1193]: 07/04 15:06:11.350: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.20:80] >
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-scpd[1193]: 07/04 15:06:11.350: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.20:7777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-scpd[1429]: 10/03 09:26:10.724: [scp] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-scpd[1429]: 10/03 09:26:10.726: [scp] INFO: Setup NF EndPoint(addr) [127.0.0.20:7777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-scpd[1429]: 10/03 09:26:10.731: [scp] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-scpd[1429]: 10/03 09:26:10.734: [scp] INFO: Setup NF EndPoint(addr) [127.0.0.13:7777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-scpd[1429]: 10/03 09:26:10.735: [scp] INFO: Setup NF EndPoint(addr) [127.0.0.20:7777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-scpd[1429]: 10/03 09:26:10.740: [scp] ERROR: (NF discover) No NF-Instance [nbsf-mana>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-scpd[1429]: 10/03 09:26:10.745: [scp] INFO: Setup NF EndPoint(addr) [127.0.0.5:7777]>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-scpd[1429]: 10/03 09:26:10.753: [scp] INFO: Setup NF EndPoint(addr) [127.0.0.4:7777]>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-scpd[1429]: 10/03 09:26:10.756: [scp] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-scpd[1429]: 10/03 09:26:10.765: [scp] INFO: Setup NF EndPoint(addr) [127.0.0.20:7777>
+lines 1-20/20 (END)
+
 
 ~$ sudo systemctl status open5gs-upfd
 ● open5gs-upfd.service - Open5GS UPF Daemon
      Loaded: loaded (/usr/lib/systemd/system/open5gs-upfd.service; enabled; preset: enabled)
-     Active: active (running) since Fri 2025-07-04 15:05:27 -03; 4min 17s ago
-   Main PID: 3633 (open5gs-upfd)
-      Tasks: 2 (limit: 18836)
+     Active: active (running) since Fri 2025-10-03 09:21:25 -03; 5h 48min ago
+   Main PID: 15570 (open5gs-upfd)
+      Tasks: 2 (limit: 18835)
      Memory: 27.5M (peak: 28.0M)
-        CPU: 152ms
+        CPU: 3.028s
      CGroup: /system.slice/open5gs-upfd.service
-             └─3633 /usr/bin/open5gs-upfd -c /etc/open5gs/upf.yaml
+             └─15570 /usr/bin/open5gs-upfd -c /etc/open5gs/upf.yaml
 
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-upfd[3633]: 07/04 15:05:29.449: [app] INFO: Configuration: '/etc/open5gs/upf.yaml' (>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-upfd[3633]: 07/04 15:05:29.449: [app] INFO: File Logging: '/var/log/open5gs/upf.log'>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-upfd[3633]: 07/04 15:05:29.543: [pfcp] WARNING: unknown key `graceful_restart` (../l>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-upfd[3633]: 07/04 15:05:29.543: [upf] WARNING: unknown key `dnn` (../src/upf/context>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-upfd[3633]: 07/04 15:05:29.544: [metrics] INFO: metrics_server() [http://127.0.0.7]:>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-upfd[3633]: 07/04 15:05:29.544: [pfcp] INFO: pfcp_server() [127.0.0.7]:8805 (../lib/>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-upfd[3633]: 07/04 15:05:29.544: [gtp] INFO: gtp_server() [127.0.0.7]:2152 (../lib/gt>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-upfd[3633]: 07/04 15:05:29.545: [upf] INFO: PFCP associated [127.0.0.4]:8805 (../src>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-upfd[3633]: 07/04 15:05:29.546: [app] INFO: UPF initialize...done (../src/upf/app.c:>
-jul 04 15:05:32 dhmm-Inspiron-5567 open5gs-upfd[3633]: 07/04 15:05:32.042: [upf] WARNING: PFCP[REQ] has already been associated>
+out 03 09:22:29 dhmm-Inspiron-5567 open5gs-upfd[15570]: 10/03 09:22:29.102: [upf] INFO: [Added] Number of UPF-Sessions is now 1>
+out 03 09:22:29 dhmm-Inspiron-5567 open5gs-upfd[15570]: 10/03 09:22:29.102: [upf] INFO: UE F-SEID[UP:0xe86 CP:0x8a3] APN[intern>
+out 03 09:22:38 dhmm-Inspiron-5567 open5gs-upfd[15570]: 10/03 09:22:38.228: [upf] INFO: [Added] Number of UPF-Sessions is now 2>
+out 03 09:22:38 dhmm-Inspiron-5567 open5gs-upfd[15570]: 10/03 09:22:38.228: [upf] INFO: UE F-SEID[UP:0x439 CP:0x98b] APN[intern>
+out 03 09:22:46 dhmm-Inspiron-5567 open5gs-upfd[15570]: 10/03 09:22:46.861: [upf] INFO: [Added] Number of UPF-Sessions is now 3>
+out 03 09:22:46 dhmm-Inspiron-5567 open5gs-upfd[15570]: 10/03 09:22:46.861: [upf] INFO: UE F-SEID[UP:0xadb CP:0xec0] APN[ims] P>
+out 03 09:22:51 dhmm-Inspiron-5567 open5gs-upfd[15570]: 10/03 09:22:51.861: [upf] INFO: [Added] Number of UPF-Sessions is now 4>
+out 03 09:22:51 dhmm-Inspiron-5567 open5gs-upfd[15570]: 10/03 09:22:51.861: [upf] INFO: UE F-SEID[UP:0xa7f CP:0x631] APN[intern>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-upfd[15570]: 10/03 09:26:10.743: [upf] INFO: [Added] Number of UPF-Sessions is now 5>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-upfd[15570]: 10/03 09:26:10.743: [upf] INFO: UE F-SEID[UP:0xcf8 CP:0xfa0] APN[ims] P>
+
 
 ~$ sudo systemctl status open5gs-nssfd
 ● open5gs-nssfd.service - Open5GS NSSF Daemon
      Loaded: loaded (/usr/lib/systemd/system/open5gs-nssfd.service; enabled; preset: enabled)
-     Active: active (running) since Fri 2025-07-04 15:05:27 -03; 4min 30s ago
-   Main PID: 3630 (open5gs-nssfd)
-      Tasks: 2 (limit: 18836)
-     Memory: 4.8M (peak: 5.2M)
-        CPU: 46ms
+     Active: active (running) since Fri 2025-10-03 07:40:17 -03; 7h ago
+   Main PID: 3023 (open5gs-nssfd)
+      Tasks: 2 (limit: 18835)
+     Memory: 7.8M (peak: 8.1M)
+        CPU: 1.892s
      CGroup: /system.slice/open5gs-nssfd.service
-             └─3630 /usr/bin/open5gs-nssfd -c /etc/open5gs/nssf.yaml
+             └─3023 /usr/bin/open5gs-nssfd -c /etc/open5gs/nssf.yaml
 
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-nssfd[3630]: 07/04 15:05:28.200: [app] INFO: File Logging: '/var/log/open5gs/nssf.lo>
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-nssfd[3630]: 07/04 15:05:28.203: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.200:77>
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-nssfd[3630]: 07/04 15:05:28.203: [sbi] INFO: NF Service [nnssf-nsselection] (../lib/>
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-nssfd[3630]: 07/04 15:05:28.203: [sbi] INFO: nghttp2_server() [http://127.0.0.14]:77>
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-nssfd[3630]: 07/04 15:05:28.204: [app] INFO: NSSF initialize...done (../src/nssf/app>
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-nssfd[3630]: 07/04 15:05:28.205: [sbi] INFO: [776e2f94-5901-41f0-a08c-91e43adf1250] >
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-nssfd[3630]: 07/04 15:05:28.207: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.10:777>
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-nssfd[3630]: 07/04 15:05:28.207: [sbi] INFO: [776e9d58-5901-41f0-aa11-773029e267d8] >
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-nssfd[3630]: 07/04 15:05:28.208: [sbi] INFO: [3922e41e-5901-41f0-8c85-69423315b930] >
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-nssfd[3630]: 07/04 15:05:28.208: [sbi] INFO: Setup NF EndPoint(addr) [127.0.1.250:77>
+out 03 07:40:17 dhmm-Inspiron-5567 open5gs-nssfd[3023]: 10/03 07:40:17.579: [nssf] WARNING: unknown key `dnn` (../src/nssf/cont>
+out 03 07:40:17 dhmm-Inspiron-5567 open5gs-nssfd[3023]: 10/03 07:40:17.579: [sbi] INFO: NF Service [nnssf-nsselection] (../lib/>
+out 03 07:40:17 dhmm-Inspiron-5567 open5gs-nssfd[3023]: 10/03 07:40:17.579: [sbi] INFO: nghttp2_server() [http://127.0.0.14]:77>
+out 03 07:40:17 dhmm-Inspiron-5567 open5gs-nssfd[3023]: 10/03 07:40:17.579: [app] INFO: NSSF initialize...done (../src/nssf/app>
+out 03 07:40:17 dhmm-Inspiron-5567 open5gs-nssfd[3023]: 10/03 07:40:17.581: [sbi] INFO: [5a3fa0ca-a045-41f0-9490-fbf679d14312] >
+out 03 07:40:17 dhmm-Inspiron-5567 open5gs-nssfd[3023]: 10/03 07:40:17.582: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.10:777>
+out 03 07:40:17 dhmm-Inspiron-5567 open5gs-nssfd[3023]: 10/03 07:40:17.582: [sbi] INFO: [5a4005ba-a045-41f0-bc33-1167aaa5fe48] >
+out 03 07:40:17 dhmm-Inspiron-5567 open5gs-nssfd[3023]: 10/03 07:40:17.584: [sbi] INFO: [1acaa94e-a045-41f0-b6dd-876ba18ae8c5] >
+out 03 07:40:17 dhmm-Inspiron-5567 open5gs-nssfd[3023]: 10/03 07:40:17.584: [sbi] INFO: Setup NF EndPoint(addr) [127.0.1.250:77>
+out 03 08:23:53 dhmm-Inspiron-5567 open5gs-nssfd[3023]: 10/03 08:23:53.292: [core] ERROR: epoll failed (4:Interrupted system ca>
+
 
 ~$ sudo systemctl status open5gs-pcfd
 ● open5gs-pcfd.service - Open5GS PCF Daemon
      Loaded: loaded (/usr/lib/systemd/system/open5gs-pcfd.service; enabled; preset: enabled)
-     Active: active (running) since Fri 2025-07-04 15:06:11 -03; 4min 3s ago
-   Main PID: 4305 (open5gs-pcfd)
-      Tasks: 2 (limit: 18836)
-     Memory: 5.9M (peak: 6.4M)
-        CPU: 76ms
+     Active: active (running) since Fri 2025-10-03 07:41:09 -03; 7h ago
+   Main PID: 4773 (open5gs-pcfd)
+      Tasks: 2 (limit: 18835)
+     Memory: 9.5M (peak: 10.0M)
+        CPU: 4.048s
      CGroup: /system.slice/open5gs-pcfd.service
-             └─4305 /usr/bin/open5gs-pcfd -c /etc/open5gs/pcf.yaml
+             └─4773 /usr/bin/open5gs-pcfd -c /etc/open5gs/pcf.yaml
 
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-pcfd[4305]: 07/04 15:06:11.352: [sbi] INFO: [91261cb2-5901-41f0-aa11-773029e267d8] S>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-pcfd[4305]: 07/04 15:06:11.353: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.10:7777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-pcfd[4305]: 07/04 15:06:11.353: [sbi] INFO: [912624f0-5901-41f0-aa11-773029e267d8] S>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-pcfd[4305]: 07/04 15:06:11.353: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.10:7777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-pcfd[4305]: 07/04 15:06:11.353: [sbi] INFO: [9126284c-5901-41f0-aa11-773029e267d8] S>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-pcfd[4305]: 07/04 15:06:11.356: [sbi] INFO: [3922e41e-5901-41f0-8c85-69423315b930] (>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-pcfd[4305]: 07/04 15:06:11.356: [sbi] INFO: Setup NF EndPoint(addr) [127.0.1.250:777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-pcfd[4305]: 07/04 15:06:11.359: [sbi] INFO: [912440d6-5901-41f0-89d5-252872096f88] (>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-pcfd[4305]: 07/04 15:06:11.359: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.20:80] >
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-pcfd[4305]: 07/04 15:06:11.359: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.20:7777>
+out 03 09:22:51 dhmm-Inspiron-5567 open5gs-pcfd[4773]: 10/03 09:22:51.859: [pcf] ERROR: [imsi-999700000000004:1] HTTP response >
+out 03 09:22:56 dhmm-Inspiron-5567 open5gs-pcfd[4773]: 10/03 09:22:56.445: [pcf] WARNING: UnRef NF EndPoint(addr) [127.0.0.5:77>
+out 03 09:22:56 dhmm-Inspiron-5567 open5gs-pcfd[4773]: 10/03 09:22:56.445: [pcf] INFO: Setup NF EndPoint(addr) [127.0.0.5:7777]>
+out 03 09:23:50 dhmm-Inspiron-5567 open5gs-pcfd[4773]: 10/03 09:23:50.033: [pcf] WARNING: UnRef NF EndPoint(addr) [127.0.0.5:77>
+out 03 09:23:50 dhmm-Inspiron-5567 open5gs-pcfd[4773]: 10/03 09:23:50.033: [pcf] INFO: Setup NF EndPoint(addr) [127.0.0.5:7777]>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-pcfd[4773]: 10/03 09:26:10.513: [pcf] WARNING: UnRef NF EndPoint(addr) [127.0.0.5:77>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-pcfd[4773]: 10/03 09:26:10.513: [pcf] INFO: Setup NF EndPoint(addr) [127.0.0.5:7777]>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-pcfd[4773]: 10/03 09:26:10.734: [pcf] WARNING: UnRef NF EndPoint(addr) [127.0.0.4:77>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-pcfd[4773]: 10/03 09:26:10.734: [pcf] INFO: Setup NF EndPoint(addr) [127.0.0.4:7777]>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-pcfd[4773]: 10/03 09:26:10.741: [pcf] ERROR: [imsi-999700000000005:1] HTTP response >
+
 
 ~$ sudo systemctl status open5gs-ausfd
 ● open5gs-ausfd.service - Open5GS AUSF Daemon
      Loaded: loaded (/usr/lib/systemd/system/open5gs-ausfd.service; enabled; preset: enabled)
-     Active: active (running) since Fri 2025-07-04 15:05:27 -03; 5min ago
-   Main PID: 3629 (open5gs-ausfd)
-      Tasks: 2 (limit: 18836)
-     Memory: 4.9M (peak: 5.3M)
-        CPU: 56ms
+     Active: active (running) since Fri 2025-10-03 07:40:17 -03; 7h ago
+   Main PID: 3022 (open5gs-ausfd)
+      Tasks: 2 (limit: 18835)
+     Memory: 8.5M (peak: 8.7M)
+        CPU: 1.988s
      CGroup: /system.slice/open5gs-ausfd.service
-             └─3629 /usr/bin/open5gs-ausfd -c /etc/open5gs/ausf.yaml
+             └─3022 /usr/bin/open5gs-ausfd -c /etc/open5gs/ausf.yaml
 
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-ausfd[3629]: 07/04 15:05:28.183: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.10:777>
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-ausfd[3629]: 07/04 15:05:28.183: [sbi] INFO: [776af93c-5901-41f0-aa11-773029e267d8] >
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-ausfd[3629]: 07/04 15:05:28.184: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.10:777>
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-ausfd[3629]: 07/04 15:05:28.184: [sbi] INFO: [776b146c-5901-41f0-aa11-773029e267d8] >
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-ausfd[3629]: 07/04 15:05:28.190: [sbi] INFO: [3922e41e-5901-41f0-8c85-69423315b930] >
-jul 04 15:05:28 dhmm-Inspiron-5567 open5gs-ausfd[3629]: 07/04 15:05:28.190: [sbi] INFO: Setup NF EndPoint(addr) [127.0.1.250:77>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-ausfd[3629]: 07/04 15:05:29.511: [sbi] INFO: [782007aa-5901-41f0-8728-e7f2c38f454c] >
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-ausfd[3629]: 07/04 15:05:29.511: [sbi] INFO: [782007aa-5901-41f0-8728-e7f2c38f454c] >
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-ausfd[3629]: 07/04 15:05:29.512: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.12:80]>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-ausfd[3629]: 07/04 15:05:29.512: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.12:777>
+out 03 09:22:51 dhmm-Inspiron-5567 open5gs-ausfd[3022]: 10/03 09:22:51.622: [ausf] WARNING: UnRef NF EndPoint(addr) [127.0.0.12>
+out 03 09:22:51 dhmm-Inspiron-5567 open5gs-ausfd[3022]: 10/03 09:22:51.622: [ausf] INFO: Setup NF EndPoint(addr) [127.0.0.12:77>
+out 03 09:22:56 dhmm-Inspiron-5567 open5gs-ausfd[3022]: 10/03 09:22:56.422: [sbi] WARNING: [c20e0c84-a04d-41f0-98c2-f5bcd72b8ab>
+out 03 09:22:56 dhmm-Inspiron-5567 open5gs-ausfd[3022]: 10/03 09:22:56.422: [sbi] INFO: [9abd2236-a053-41f0-839e-1369610be3b1] >
+out 03 09:22:56 dhmm-Inspiron-5567 open5gs-ausfd[3022]: 10/03 09:22:56.433: [ausf] WARNING: UnRef NF EndPoint(addr) [127.0.0.12>
+out 03 09:22:56 dhmm-Inspiron-5567 open5gs-ausfd[3022]: 10/03 09:22:56.433: [ausf] INFO: Setup NF EndPoint(addr) [127.0.0.12:77>
+out 03 09:23:50 dhmm-Inspiron-5567 open5gs-ausfd[3022]: 10/03 09:23:50.026: [ausf] WARNING: UnRef NF EndPoint(addr) [127.0.0.12>
+out 03 09:23:50 dhmm-Inspiron-5567 open5gs-ausfd[3022]: 10/03 09:23:50.026: [ausf] INFO: Setup NF EndPoint(addr) [127.0.0.12:77>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-ausfd[3022]: 10/03 09:26:10.505: [ausf] WARNING: UnRef NF EndPoint(addr) [127.0.0.12>
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-ausfd[3022]: 10/03 09:26:10.505: [ausf] INFO: Setup NF EndPoint(addr) [127.0.0.12:77>
+
 
 ~$ sudo systemctl status open5gs-udmd
 ● open5gs-udmd.service - Open5GS UDM Daemon
      Loaded: loaded (/usr/lib/systemd/system/open5gs-udmd.service; enabled; preset: enabled)
-     Active: active (running) since Fri 2025-07-04 15:05:27 -03; 5min ago
-   Main PID: 3632 (open5gs-udmd)
-      Tasks: 2 (limit: 18836)
-     Memory: 5.2M (peak: 5.5M)
-        CPU: 57ms
+     Active: active (running) since Fri 2025-10-03 09:22:18 -03; 5h 49min ago
+   Main PID: 15665 (open5gs-udmd)
+      Tasks: 2 (limit: 18835)
+     Memory: 7.9M (peak: 8.1M)
+        CPU: 1.627s
      CGroup: /system.slice/open5gs-udmd.service
-             └─3632 /usr/bin/open5gs-udmd -c /etc/open5gs/udm.yaml
+             └─15665 /usr/bin/open5gs-udmd -c /etc/open5gs/udm.yaml
 
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-udmd[3632]: 07/04 15:05:29.517: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.10:7777>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-udmd[3632]: 07/04 15:05:29.517: [sbi] INFO: [7835f9fc-5901-41f0-aa11-773029e267d8] S>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-udmd[3632]: 07/04 15:05:29.517: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.10:7777>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-udmd[3632]: 07/04 15:05:29.517: [sbi] INFO: [7835fdd0-5901-41f0-aa11-773029e267d8] S>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-udmd[3632]: 07/04 15:05:29.526: [sbi] INFO: [3922e41e-5901-41f0-8c85-69423315b930] (>
-jul 04 15:05:29 dhmm-Inspiron-5567 open5gs-udmd[3632]: 07/04 15:05:29.526: [sbi] INFO: Setup NF EndPoint(addr) [127.0.1.250:777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udmd[3632]: 07/04 15:06:11.351: [sbi] INFO: [912440d6-5901-41f0-89d5-252872096f88] (>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udmd[3632]: 07/04 15:06:11.351: [sbi] INFO: [912440d6-5901-41f0-89d5-252872096f88] (>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udmd[3632]: 07/04 15:06:11.351: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.20:80] >
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udmd[3632]: 07/04 15:06:11.351: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.20:7777>
+out 03 09:22:27 dhmm-Inspiron-5567 open5gs-udmd[15665]: 10/03 09:22:27.111: [sbi] INFO: [7984640c-a045-41f0-819a-dfd32e4dcb74] >
+out 03 09:22:29 dhmm-Inspiron-5567 open5gs-udmd[15665]: 10/03 09:22:29.116: [sbi] INFO: [7984640c-a045-41f0-819a-dfd32e4dcb74] >
+out 03 09:22:34 dhmm-Inspiron-5567 open5gs-udmd[15665]: 10/03 09:22:34.344: [sbi] INFO: [7984640c-a045-41f0-819a-dfd32e4dcb74] >
+out 03 09:22:38 dhmm-Inspiron-5567 open5gs-udmd[15665]: 10/03 09:22:38.242: [sbi] INFO: [7984640c-a045-41f0-819a-dfd32e4dcb74] >
+out 03 09:22:42 dhmm-Inspiron-5567 open5gs-udmd[15665]: 10/03 09:22:42.586: [sbi] INFO: [7984640c-a045-41f0-819a-dfd32e4dcb74] >
+out 03 09:22:46 dhmm-Inspiron-5567 open5gs-udmd[15665]: 10/03 09:22:46.877: [sbi] INFO: [7984640c-a045-41f0-819a-dfd32e4dcb74] >
+out 03 09:22:51 dhmm-Inspiron-5567 open5gs-udmd[15665]: 10/03 09:22:51.616: [sbi] INFO: [7984640c-a045-41f0-819a-dfd32e4dcb74] >
+out 03 09:22:51 dhmm-Inspiron-5567 open5gs-udmd[15665]: 10/03 09:22:51.875: [sbi] INFO: [7984640c-a045-41f0-819a-dfd32e4dcb74] >
+out 03 09:22:56 dhmm-Inspiron-5567 open5gs-udmd[15665]: 10/03 09:22:56.424: [sbi] INFO: [7984640c-a045-41f0-819a-dfd32e4dcb74] >
+out 03 09:26:10 dhmm-Inspiron-5567 open5gs-udmd[15665]: 10/03 09:26:10.759: [sbi] INFO: [7984640c-a045-41f0-819a-dfd32e4dcb74] >
+
 
 ~$ sudo systemctl status open5gs-udrd
 ● open5gs-udrd.service - Open5GS UDR Daemon
      Loaded: loaded (/usr/lib/systemd/system/open5gs-udrd.service; enabled; preset: enabled)
-     Active: active (running) since Fri 2025-07-04 15:06:11 -03; 4min 43s ago
-   Main PID: 4306 (open5gs-udrd)
-      Tasks: 2 (limit: 18836)
-     Memory: 5.6M (peak: 6.0M)
-        CPU: 60ms
+     Active: active (running) since Fri 2025-10-03 07:41:09 -03; 7h ago
+   Main PID: 4774 (open5gs-udrd)
+      Tasks: 2 (limit: 18835)
+     Memory: 9.3M (peak: 9.6M)
+        CPU: 2.108s
      CGroup: /system.slice/open5gs-udrd.service
-             └─4306 /usr/bin/open5gs-udrd -c /etc/open5gs/udr.yaml
+             └─4774 /usr/bin/open5gs-udrd -c /etc/open5gs/udr.yaml
 
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udrd[4306]: 07/04 15:06:11.339: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.200:777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udrd[4306]: 07/04 15:06:11.346: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5g>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udrd[4306]: 07/04 15:06:11.347: [sbi] INFO: NF Service [nudr-dr] (../lib/sbi/context>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udrd[4306]: 07/04 15:06:11.347: [sbi] INFO: nghttp2_server() [http://127.0.0.20]:777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udrd[4306]: 07/04 15:06:11.347: [app] INFO: UDR initialize...done (../src/udr/app.c:>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udrd[4306]: 07/04 15:06:11.351: [sbi] INFO: [912440d6-5901-41f0-89d5-252872096f88] N>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udrd[4306]: 07/04 15:06:11.353: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.10:7777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udrd[4306]: 07/04 15:06:11.353: [sbi] INFO: [91263378-5901-41f0-aa11-773029e267d8] S>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udrd[4306]: 07/04 15:06:11.358: [sbi] INFO: [3922e41e-5901-41f0-8c85-69423315b930] (>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-udrd[4306]: 07/04 15:06:11.358: [sbi] INFO: Setup NF EndPoint(addr) [127.0.1.250:777>
+out 03 07:41:10 dhmm-Inspiron-5567 open5gs-udrd[4774]: 10/03 07:41:10.086: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5g>
+out 03 07:41:10 dhmm-Inspiron-5567 open5gs-udrd[4774]: 10/03 07:41:10.086: [sbi] INFO: NF Service [nudr-dr] (../lib/sbi/context>
+out 03 07:41:10 dhmm-Inspiron-5567 open5gs-udrd[4774]: 10/03 07:41:10.087: [sbi] INFO: nghttp2_server() [http://127.0.0.20]:777>
+out 03 07:41:10 dhmm-Inspiron-5567 open5gs-udrd[4774]: 10/03 07:41:10.087: [app] INFO: UDR initialize...done (../src/udr/app.c:>
+out 03 07:41:10 dhmm-Inspiron-5567 open5gs-udrd[4774]: 10/03 07:41:10.096: [sbi] INFO: [7984640c-a045-41f0-819a-dfd32e4dcb74] N>
+out 03 07:41:10 dhmm-Inspiron-5567 open5gs-udrd[4774]: 10/03 07:41:10.104: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.10:7777>
+out 03 07:41:10 dhmm-Inspiron-5567 open5gs-udrd[4774]: 10/03 07:41:10.104: [sbi] INFO: [798db0ac-a045-41f0-bc33-1167aaa5fe48] S>
+out 03 07:41:10 dhmm-Inspiron-5567 open5gs-udrd[4774]: 10/03 07:41:10.120: [sbi] INFO: [1acaa94e-a045-41f0-b6dd-876ba18ae8c5] (>
+out 03 07:41:10 dhmm-Inspiron-5567 open5gs-udrd[4774]: 10/03 07:41:10.120: [sbi] INFO: Setup NF EndPoint(addr) [127.0.1.250:777>
+out 03 08:23:53 dhmm-Inspiron-5567 open5gs-udrd[4774]: 10/03 08:23:53.294: [core] ERROR: epoll failed (4:Interrupted system cal>
+
 
 ~$ sudo systemctl status open5gs-nrfd
 ● open5gs-nrfd.service - Open5GS NRF Daemon
      Loaded: loaded (/usr/lib/systemd/system/open5gs-nrfd.service; enabled; preset: enabled)
-     Active: active (running) since Fri 2025-07-04 15:03:37 -03; 7min ago
-   Main PID: 1191 (open5gs-nrfd)
-      Tasks: 2 (limit: 18836)
-     Memory: 7.6M (peak: 8.0M)
-        CPU: 214ms
+     Active: active (running) since Fri 2025-10-03 07:38:19 -03; 7h ago
+   Main PID: 1425 (open5gs-nrfd)
+      Tasks: 2 (limit: 18835)
+     Memory: 24.5M (peak: 25.0M)
+        CPU: 9.422s
      CGroup: /system.slice/open5gs-nrfd.service
-             └─1191 /usr/bin/open5gs-nrfd -c /etc/open5gs/nrf.yaml
+             └─1425 /usr/bin/open5gs-nrfd -c /etc/open5gs/nrf.yaml
 
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-nrfd[1191]: 07/04 15:06:11.349: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.20:7777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-nrfd[1191]: 07/04 15:06:11.349: [nrf] INFO: [912440d6-5901-41f0-89d5-252872096f88] N>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-nrfd[1191]: 07/04 15:06:11.351: [nrf] INFO: Setup NF EndPoint(addr) [127.0.0.13:7777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-nrfd[1191]: 07/04 15:06:11.351: [nrf] INFO: [91261cb2-5901-41f0-aa11-773029e267d8] S>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-nrfd[1191]: 07/04 15:06:11.352: [nrf] INFO: Setup NF EndPoint(addr) [127.0.0.13:7777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-nrfd[1191]: 07/04 15:06:11.352: [nrf] INFO: [912624f0-5901-41f0-aa11-773029e267d8] S>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-nrfd[1191]: 07/04 15:06:11.352: [nrf] INFO: Setup NF EndPoint(addr) [127.0.0.13:7777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-nrfd[1191]: 07/04 15:06:11.352: [nrf] INFO: [9126284c-5901-41f0-aa11-773029e267d8] S>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-nrfd[1191]: 07/04 15:06:11.352: [nrf] INFO: Setup NF EndPoint(addr) [127.0.0.20:7777>
-jul 04 15:06:11 dhmm-Inspiron-5567 open5gs-nrfd[1191]: 07/04 15:06:11.352: [nrf] INFO: [91263378-5901-41f0-aa11-773029e267d8] S>
-
+out 03 09:22:18 dhmm-Inspiron-5567 open5gs-nrfd[1425]: 10/03 09:22:18.711: [nrf] WARNING: Subscription notification failed [404>
+out 03 09:22:18 dhmm-Inspiron-5567 open5gs-nrfd[1425]: 10/03 09:22:18.731: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.12:80] >
+out 03 09:22:18 dhmm-Inspiron-5567 open5gs-nrfd[1425]: 10/03 09:22:18.731: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
+out 03 09:22:18 dhmm-Inspiron-5567 open5gs-nrfd[1425]: 10/03 09:22:18.731: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
+out 03 09:22:18 dhmm-Inspiron-5567 open5gs-nrfd[1425]: 10/03 09:22:18.731: [sbi] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
+out 03 09:22:18 dhmm-Inspiron-5567 open5gs-nrfd[1425]: 10/03 09:22:18.731: [nrf] INFO: [9abd2236-a053-41f0-839e-1369610be3b1] N>
+out 03 09:22:18 dhmm-Inspiron-5567 open5gs-nrfd[1425]: 10/03 09:22:18.735: [nrf] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
+out 03 09:22:18 dhmm-Inspiron-5567 open5gs-nrfd[1425]: 10/03 09:22:18.735: [nrf] INFO: [9abdfb16-a053-41f0-bc33-1167aaa5fe48] S>
+out 03 09:22:18 dhmm-Inspiron-5567 open5gs-nrfd[1425]: 10/03 09:22:18.735: [nrf] INFO: Setup NF EndPoint(addr) [127.0.0.12:7777>
+out 03 09:22:18 dhmm-Inspiron-5567 open5gs-nrfd[1425]: 10/03 09:22:18.735: [nrf] INFO: [9abe0354-a053-41f0-bc33-1167aaa5fe48] S>
 

@@ -29,15 +29,19 @@ smf:
       - address: 127.0.0.4
   dnn:
     - addr: 10.45.0.1/16
-      dnn: internet
+#      dnn: internet
       s_nssai:
         sst: 1
-        ssd: 0x010203
-    - addr: 10.46.0.1/16
-      dnn: urllc
-      s_nssai:
+        sd: 000001
+        dnn: internet
         sst: 2
-        ssd: 0x112233
+        sd: 000002
+        dnn: internet2
+    - addr: 10.46.0.1/16
+      dnn: ims
+      s_nssai:
+        sst: 3
+        sd: 000003
   gtpu:
     server:
       - address: 127.0.0.4
@@ -48,6 +52,8 @@ smf:
   session:
     - subnet: 10.45.0.0/16
       gateway: 10.45.0.1
+    - subnet: 10.46.0.0/16
+      gateway: 10.46.0.1
     - subnet: 2001:db8:cafe::/48
       gateway: 2001:db8:cafe::1
   dns:
@@ -77,6 +83,7 @@ smf:
 #  info:
 #    - s_nssai:
 #        - sst: 1
+#          sd: 0x010203
 #          dnn:
 #            - internet
 #
